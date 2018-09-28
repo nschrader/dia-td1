@@ -69,7 +69,7 @@ createClient()
 }))
 .then(write('GET bonjour'))
 .then(read((data, resolve, reject) => {
-  if (data.toString() === "hello\n") {
+  if (data.toString() === "5\nhello\n") {
     console.info("4) GET success")
     resolve("4) GET success")
   } else {
